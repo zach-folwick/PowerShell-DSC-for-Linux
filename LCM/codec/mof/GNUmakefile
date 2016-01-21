@@ -1,7 +1,7 @@
 TOP = ../..
 include $(TOP)/config.mak
 
-LIBRARY = micodec
+CSHLIBRARY = micodec
 
 SOURCES = \
 	codecimpl.c \
@@ -15,6 +15,8 @@ SOURCES = \
 INCLUDES = $(OMI)/common  $(OMI) $(TOP) $(TOP)/codec/common $(OMI)/nits/base  $(TOP)/codec/mof/parser
 
 DEFINES = MI_CONST=
+
+LIBRARIES = mi pal miapi base mofparser nitspal
 
 include $(OMI)/mak/rules.mak
 
